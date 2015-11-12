@@ -157,16 +157,70 @@ http://www.coderdojo.com
 
 ---
 
-## [fit] The 4 Rules of Simple Design
+## [fit] Simple Design
 
 ---
 
-## Simple Design
+> Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+—Antoine de Saint-Exupéry
+
+---
+
+> Any intelligent fool can make things bigger, more complex and more violent. It takes a touch of genius and a lot of courage to move in the opposite direction.
+—Albert Einstein.
+
+---
+
+> Don't write code that guesses the future. Arrange code so that you can adapt to the future when it arrives.
+-- Sandi Metz
+
+---
+
+### Simple Design
+
+##### Simple Design is one that is easy to change.
+
+We don't know exactly what is going to need to change. We'll never be more ignorant than we are at this moment.
+
+---
+
+### The Four Rules Simple Design (Kent Beck)
 
 1. Passes All Its Tests
 2. Clearly Expresses Intent
 3. Contains No Duplication
-5. Has No Superflous Parts
+4. Small (Has No Superflous Parts)
+
+---
+
+### 1. Passes All Tests
+
+Good design/factoring/etc. is useless if code doesn't do what is intended
+
+---
+
+### 2. Clearly Expresses Intent
+
+Pay attention to naming, readability, and how code expresses itself
+
+---
+
+### 3. No Duplication
+
+Essentially the DRY (Don't Repeat Yourself) principle of removing knowledge duplication.
+
+---
+
+### 4. Small 
+
+No unused code, check for missing or duplicate abstractions, look for over-abstraction.
+
+---
+
+##### J.B. Rainsberger's Simple Design Dynamo
+##### http://blog.thecodewhisperer.com/2013/12/07/putting-an-age-old-battle-to-rest/
+
+![inline fit](http://blog.thecodewhisperer.com/images/age_old_battle/virtuous_cycle.png)
 
 ---
 
@@ -201,6 +255,15 @@ Many client specific interfaces are better than one general purpose interface
 ## Dependency Inversion Principle
 
 One should "Depend upon abstractions. Do not depend upon concretions." Dependency injection is one example of following this principle.
+
+---
+
+### Law of Demeter
+
+
+---
+
+### Design Patterns
 
 ---
 
