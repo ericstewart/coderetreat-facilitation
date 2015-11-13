@@ -2,7 +2,7 @@ autoscale: true
 
 # [fit] Coderetreat
 
-![inline](https://pbs.twimg.com/profile_images/531005641603563520/VjBxAjEG_400x400.png)
+![](https://pbs.twimg.com/profile_images/531005641603563520/VjBxAjEG_400x400.png)
 
 ---
 
@@ -11,6 +11,10 @@ autoscale: true
 ---
 
 ## [fit] Welcome!
+
+---
+
+![fit center](https://cdn-images-1.medium.com/max/600/1*z49ot16nGekl8bZQCXORBg.jpeg)
 
 ---
 
@@ -33,11 +37,9 @@ autoscale: true
 
 ---
 
+![](resources/av_retreat_group_2014.jpg)
+
 ## [fit] What Is Coderetreat?
-
----
-
-![fit center](https://cdn-images-1.medium.com/max/600/1*z49ot16nGekl8bZQCXORBg.jpeg)
 
 ---
 
@@ -73,8 +75,11 @@ CoderDojo is a global movement of free, volunteer-led,  community based programm
 
 http://www.coderdojo.com
 
+![inline](https://cdn.evbuc.com/images/8156693/63100574587/1/logo.jpg)
 
-![fit right](https://www.youtube.com/watch?v=z_gcHGa8J1E)
+---
+
+![fit](https://www.youtube.com/watch?v=z_gcHGa8J1E)
 
 ---
 
@@ -97,6 +102,8 @@ http://www.coderdojo.com
 
 ---
 
+![](resources/av_retreat_group_2014-2.jpg)
+
 ### Format
 
 * 8-8:45am: arrive, coffee/breakfast
@@ -107,6 +114,8 @@ http://www.coderdojo.com
 * 4-4:30pm: Closing circle
 
 ---
+
+![](resources/av_retreat_group_2014-3.jpg)
 
 ### Sessions
 
@@ -120,6 +129,12 @@ http://www.coderdojo.com
 
 ---
 
+![](http://studiosweb-prod.thoughtworks.com/sites/default/files/assets/pair-programming.jpg)
+
+## Pair Programming
+
+---
+
 ![right fit](http://zurich.codersonly.org/files/cache/b9d2c769938fc9457fd411a06bd735a3_f85.JPG)
 
 ## Pair Programming
@@ -128,6 +143,18 @@ http://www.coderdojo.com
 * Decide on language
 * Work together
 * **Who** does **what**?
+
+---
+
+![](http://farm4.static.flickr.com/3576/3394902061_4a2e7807b6.jpg)
+
+^ Have fun with it too!
+
+---
+
+### [fit] Pair Programming - If Hollywood Made a Movie
+
+![inline fit mute](https://youtu.be/M_XwzBMTJaM?t=102&end=114&version=3)
 
 ---
 
@@ -315,25 +342,33 @@ Some patterns do not change from one generation to the next
 ---
 
 
-## First Session
+## Resources
 
+---
+
+### Starting Points
+
+* [Github: coreyhaines/coderetreat](https://github.com/coreyhaines/coderetreat)
+* [Github: Agilefreaks/coderetreat](https://github.com/Agilefreaks/coderetreat) - C#, JavaScript, Ruby, Swift
+* [Github: justinwyer/coderetreat](https://github.com/justinwyer/coderetreat-java) - Java
+* 
+
+---
+
+### Web
+
+* [LifeWiki](http://www.conwaylife.com/w/index.php?title=Main_Page)
+
+---
+
+### Software
+
+* [Golly](http://golly.sourceforge.net)
 
 
 ---
 
-## Second Session
-
-
-
----
-
-## Third Session
-
-
-
----
-
-## [fit] Lunch / Socialization
+### Videos
 
 ---
 
@@ -361,56 +396,3 @@ Some patterns do not change from one generation to the next
 ^ Conway's GOL Explanation - Hawking
 
 ---
-
-## Fourth Session
-
-
-
----
-
-## Fifth Session
-
-
-
----
-
-## Sixth Session
-
-
-
----
-
-## Closing Circle
-
-Everyone stand and gather around in a circle. We will go around and each answer the following 3 questions.
-
-Take a minute or two to think before we begin.
-
-* What--if anything--surprised you today?
-* What--if anything--did you learn today?
-* What--if anything--will you do differently on Monday or in the future?
-
----
-
-## Resources
-
----
-
-### Starting Points
-
-* [Github: coreyhaines/coderetreat](https://github.com/coreyhaines/coderetreat)
-* [Github: Agilefreaks/coderetreat](https://github.com/Agilefreaks/coderetreat) - C#, JavaScript, Ruby, Swift
-* [Github: justinwyer/coderetreat](https://github.com/justinwyer/coderetreat-java) - Java
-* 
-
----
-
-### Web
-
-* [LifeWiki](http://www.conwaylife.com/w/index.php?title=Main_Page)
-
----
-
-### Software
-
-* [Golly](http://golly.sourceforge.net)
