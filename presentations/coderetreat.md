@@ -31,7 +31,7 @@ autoscale: true
 ## Schedule
 
 1. About Coderetreat
-2. The Four Rules of Simple Design
+2. Design
 3. Conway's Game of Life
 4. Start Sessions
 
@@ -238,9 +238,24 @@ Essentially the DRY (Don't Repeat Yourself) principle of removing knowledge dupl
 
 ---
 
+### Don't Repeat Yourself (DRY)
+
+This rule isn't about code duplication; it is about knowledge duplication:
+
+> *Every piece of knowledge should have one and only one representation.*
+-- The Pragmatic Programmer[^pragprog]
+
+[^pragprog]: http://pragprog.com/book/tpp/the-pragmatic-programmer
+
+---
+
 ### 4. Small 
 
 No unused code, check for missing or duplicate abstractions, look for over-abstraction.
+
+---
+
+![fit](http://martinfowler.com/bliki/images/beckDesignRules/sketch.png)
 
 ---
 
@@ -251,53 +266,111 @@ No unused code, check for missing or duplicate abstractions, look for over-abstr
 
 ---
 
+
 ## SOLID Principles
 
----
-
-## Single Responsibility Principle
-
-An object should have only a single responsibility
-
----
-
-## Open/Closed Principle
-
-Software entitites should be open for extension but closed for modification
-
----
-
-## Liskov Substitution Principle
-
-Ojbects in a program should be replaceable with instances of their subtypes without altering the correctnesss of that program
-
----
-
-## Interface Segregation Principle
-
-Many client specific interfaces are better than one general purpose interface
-
----
-
-## Dependency Inversion Principle
-
-One should "Depend upon abstractions. Do not depend upon concretions." Dependency injection is one example of following this principle.
+* **S**ingle Responsibility Principle
+   A module should have one, and only one, reason to change.
+* **O**pen-Closed Principle
+  You should be able to extend a classes behavior without modifying it
+* **L**iskov Substitution Principle
+  Derived objects must be substitutable for the base classes
+* **I**nterface Segregation Principle
+  Make fine-grained interfaces that are client specific
+* Dependency inversion principle
+  Depend on abstractions, not on concretions. Dependency injection is an eample.
 
 ---
 
 ### Law of Demeter
+##### (Principle of Least Knowledge)
+
+> A method can access either locally-instantiated variables, parameters passed in, or instance variables.
+
+Or more simple....
+
+> One dot per statement.
+
+---
+
+### Law of Demeter Example[^2]
+
+```ruby
+class Wallet
+  attr_accessor :cash
+end
+class Customer
+  has_one :wallet
+end
+class Paperboy
+  def collect_money(customer, due_amount)
+    if customer.wallet.cash < due_ammount
+      raise InsufficientFundsError
+    else
+      customer.wallet.cash -= due_amount
+      @collected_amount += due_amount
+    end
+  end
+end
+```
 
 
 ---
 
-### Design Patterns
+### Law of Demeter (Improved)[^2]
+
+```ruby
+class Wallet
+  attr_accessor :cash
+  def withdraw(amount)
+     raise InsufficientFundsError if amount > cash
+     cash -= amount
+     amount
+  end
+end
+class Customer
+  has_one :wallet
+  # behavior delegation
+  def pay(amount)
+    @wallet.withdraw(amount)
+  end
+end
+class Paperboy
+  def collect_money(customer, due_amount)
+    @collected_amount += customer.pay(due_amount)
+  end
+end
+```
+
+[^2]: http://www.dan-manges.com/blog/37
 
 ---
 
-## [fit] What does *Good Code* Look Like?
+### Tell, Don't Ask[^tda]
+
+It is okay to use accessors to get the state of an object, as long as you don't use the result to make decisions outside the object.
+
+Any decisions based entirely upon the state of one object should be made 'inside' the object itself.
 
 ---
 
+### Tell, Don't Ask Example[^tda]
+
+```C#
+price = item.Price
+if (price < 20) {
+    item.SetAsBargain()
+}
+```
+
+```C#
+ price = item.Price
+  this.LineColor? = price < 20 ? "Green" : "Red"
+```
+
+[^tda]: http://c2.com/cgi/wiki?TellDontAsk
+
+---
 
 ## [fit] Conway's Game of Life
 
