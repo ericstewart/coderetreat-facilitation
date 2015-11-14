@@ -102,6 +102,12 @@ http://www.coderdojo.com
 
 ---
 
+![fit](http://www.solvexia.com/wp-content/uploads/misc/cost_of_change.png)
+
+^ Concept of "Cost of Change"
+
+---
+
 ![](resources/av_retreat_group_2014-2.jpg)
 
 ### Format
