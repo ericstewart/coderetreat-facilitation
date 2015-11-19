@@ -429,8 +429,8 @@ Some patterns do not change from one generation to the next
 
 * [Github: coreyhaines/coderetreat](https://github.com/coreyhaines/coderetreat)
 * [Github: Agilefreaks/coderetreat](https://github.com/Agilefreaks/coderetreat) - C#, JavaScript, Ruby, Swift
-* [Github: justinwyer/coderetreat](https://github.com/justinwyer/coderetreat-java) - Java
-* 
+* https://github.com/justinwyer/coderetreat-java - Java
+* https://github.com/swkBerlin/kata-bootstraps - Java, JavaScript, Python, Ruby, Scala
 
 ---
 
